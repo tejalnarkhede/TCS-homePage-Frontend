@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Company Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        /* You can add your custom CSS styles here */
+        .carousel-caption d-none d-md-block{
+            color:white;
+            size:100px;
+        }
+
+        .carousel-item img{
+            width: 100%;
+            height:500px;
+            object-fit: cover;
+        }
+
+        .jumbotron {
+            background-image: url('https://via.placeholder.com/1500x600');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 0;
+        }
+        .services {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        .service {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .service img {
+            max-width: 100%;
+            opacity: 0.8;
+        }
+        .contact {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="images\TCS.NS_BIG.png">TCS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Slideshow -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="images\workingprofessionals2.jpg" alt="First slide">
+            <!-- <div class="carousel-caption d-none d-md-block">
+                <h5>TCS at the World Economic Forum 2024</h5>
+                <p>The future is AI the future is woman.</p>
+            </div> -->
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images\workingprofessionals1.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block" >
+                <h5></h5>
+                <p></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images\calm.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 3</h5>
+                <p>Some text describing the third slide.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="text-center mb-4">Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service">
+                    <img src="images\cloud.jpg" alt="Service 1">
+                    <h3>Cloud</h3>
+                    <p>Enables you to navigate cloud with a framework aligned to your business goals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service">
+                    <img src="images\business operations.jpg" alt="Service 2">
+                    <h3>Cognitive Business Operations</h3>
+                    <p>Business functions that are integrated, intelligent, secure, and agile form the bedrock of future-ready organizations..</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service">
+                    <img src="images\cybersecurity.jpg" alt="Service 3">
+                    <h3>Cyber Security</h3>
+                    <p>With expanding threat perimeters in the digital world, cybersecurity is no longer just about compliance and risk mitigation—it is a growth imperative..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <h1>Building greater futures through innovation and collective knowledge</h1>
+        <p>Tata Consultancy Services is an IT services, consulting and business solutions organization that has been partnering with many of the world’s largest businesses for the past 50 years. We believe innovation and collective knowledge can transform all our futures with greater purpose.</p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Address</h3>
+                <p>123 Street, City, Country</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-light text-center">
+    <div class="container">
+        <span>&copy; 2022 IT Company. All rights reserved.</span>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
